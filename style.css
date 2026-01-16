@@ -772,6 +772,13 @@ ul {
     padding: 2px 4px;
 }
 
+.payment-svg {
+    height: 32px;
+    width: 48px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 .social-link {
     display: flex;
     align-items: center;
