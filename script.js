@@ -80,6 +80,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
+    // --- Product Info Accordion Logic ---
+    const productInfoHeaders = document.querySelectorAll('.product-info-header');
+
+    productInfoHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            const isOpen = item.classList.contains('active');
+
+            // Close other items in the SAME accordion (optional, but cleaner)
+            const accordion = header.closest('.product-info-accordion');
+            accordion.querySelectorAll('.product-info-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.product-info-header').setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+            header.setAttribute('aria-expanded', !isOpen);
+        });
+    });
+
     // --- Smooth Scroll for Anchor Links ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
