@@ -430,13 +430,36 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
-    align-items: center;
+    align-items: start;
 }
 
 .grid-3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    align-items: start;
+}
+
+.product-grid {
+    align-items: start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.home-cooking-box {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(140, 74, 47, 0.1);
+}
+
+@media (max-width: 768px) {
+    .home-cooking-box {
+        padding: 1.5rem;
+    }
 }
 
 .gap-large {
