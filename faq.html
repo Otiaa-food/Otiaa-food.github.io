@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - OTIAA Kamerunische Küche</title>
+    <meta name="description"
+        content="Häufig gestellte Fragen zu OTIAA Catering, unseren Kochkursen und Feinkost-Produkten.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faq-hero {
+            position: relative;
+            background: url('assets/ndop_pattern.png') center/repeat;
+            padding: 8rem 0 4rem;
+            color: white;
+            text-align: center;
+        }
+
+        .faq-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(31, 31, 31, 0.7);
+            z-index: 1;
+        }
+
+        .faq-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .faq-hero h1 {
+            color: var(--c-highlight);
+            margin-bottom: 1rem;
+        }
+
+        .faq-section {
+            padding: 4rem 0;
+            background-color: var(--c-bg);
+            background-image: url('assets/ndop_pattern.png');
+            background-size: 200px;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-attachment: fixed;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            border: 1px solid rgba(140, 74, 47, 0.1);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: var(--c-text-accent);
+            font-family: var(--font-head);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: rgba(254, 239, 205, 0.5);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            display: none;
+            color: var(--c-text-main);
+            line-height: 1.6;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 1.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-toggle {
+            transition: var(--transition);
+            color: var(--c-highlight);
+        }
+
+        .faq-number {
+            color: var(--c-highlight);
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+        .faq-cta {
+            background: #fff;
+            padding: 4rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(140, 74, 47, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation (Same as Index) -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="assets/logo.png" alt="OTIAA Logo" class="nav-logo">
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html#history" class="nav-link" data-de="Unsere Geschichte"
+                            data-fr="Notre Histoire" data-en="Our Story">Unsere Geschichte</a></li>
+                    <li><a href="index.html#catering" class="nav-link" data-de="Catering" data-fr="Traiteur"
+                            data-en="Catering">Catering</a></li>
+                    <li><a href="index.html#classes" class="nav-link" data-de="Kochkurse" data-fr="Cours de Cuisine"
+                            data-en="Cooking Classes">Kochkurse</a></li>
+                    <li><a href="index.html#products" class="nav-link" data-de="Unsere Feinkost" data-fr="Nos Produits"
+                            data-en="Our Delicatessen">Unsere Feinkost</a></li>
+                    <li><a href="index.html#contact" class="nav-link" data-de="Kontakt" data-fr="Contact"
+                            data-en="Contact">Kontakt</a></li>
+                </ul>
+                <a href="https://instagram.com/otiaa_food" target="_blank" class="nav-social" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <div class="nav-controls-mobile">
+                    <div class="lang-flags">
+                        <button class="lang-btn active" data-lang="de">🇩🇪</button>
+                        <button class="lang-btn" data-lang="fr">🇫🇷</button>
+                        <button class="lang-btn" data-lang="en">🇬🇧</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-controls">
+                <div class="lang-flags desktop-only">
+                    <button class="lang-btn active" data-lang="de">🇩🇪</button>
+                    <button class="lang-btn" data-lang="fr">🇫🇷</button>
+                    <button class="lang-btn" data-lang="en">🇬🇧</button>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="faq-hero">
+        <div class="container">
+            <h1 data-de="Häufig gestellte Fragen" data-fr="Foire aux questions" data-en="Frequently Asked Questions">
+                Häufig gestellte Fragen</h1>
+            <p data-de="Alles, was Sie über OTIAA, unsere Küche und unsere Dienstleistungen wissen möchten"
+                data-fr="Tout ce que vous voulez savoir sur OTIAA, notre cuisine et nos services"
+                data-en="Everything you want to know about OTIAA, our cuisine and our services">
+                Alles, was Sie über OTIAA, unsere Küche und unsere Dienstleistungen wissen möchten
+            </p>
+        </div>
+    </header>
+
+    <!-- FAQ List -->
+    <section class="faq-section">
+        <div class="container faq-container">
+
+            <!-- Question 1 -->
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question">
+                    <span><span class="faq-number">01.</span> <span data-de="In welchem Gebiet sind Sie tätig?"
+                            data-fr="Dans quelle région intervenez-vous ?" data-en="In which areas do you operate?">In
+                            welchem Gebiet sind Sie tätig?</span></span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-de="Wir bieten unsere Dienstleistungen hauptsächlich im süddeutschen Raum an, einschließlich Baden-Württemberg und angrenzender Regionen. Unser Standort ist in Pforzheim. Nach individueller Vereinbarung reisen wir auch weiter, z. B. in andere Bundesländer, um Ihren Bedürfnissen gerecht zu werden."
+                        data-fr="Nous proposons nos services principalement dans le sud de l'Allemagne, notamment dans le Bade-Wurtemberg et les régions voisines. Nous sommes basés à Pforzheim. Sur accord individuel, nous nous déplaçons également plus loin, par exemple dans d'autres lands, pour répondre à vos besoins."
+                        data-en="We mainly offer our services in southern Germany, including Baden-Württemberg and adjacent regions. Our location is in Pforzheim. By individual arrangement, we also travel further, e.g. to other federal states, to meet your needs.">
+                        Wir bieten unsere Dienstleistungen hauptsächlich im süddeutschen Raum an, einschließlich
+                        Baden-Württemberg und angrenzender Regionen. Unser Standort ist in Pforzheim. Nach individueller
+                        Vereinbarung reisen wir auch weiter, z. B. in andere Bundesländer, um Ihren Bedürfnissen gerecht
+                        zu werden.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question">
+                    <span><span class="faq-number">02.</span> <span
+                            data-de="Verwenden Sie natürliche Zutaten in Ihren Gerichten?"
+                            data-fr="Utilisez-vous des ingrédients naturels dans vos plats ?"
+                            data-en="Do you use natural ingredients in your dishes?">Verwenden Sie natürliche Zutaten in
+                            Ihren Gerichten?</span></span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-de="Ja, wir arbeiten ausschließlich mit natürlichen Lebensmitteln und ohne Geschmacksverstärker. Unsere Zutaten stammen aus nachhaltigen Quellen, um den authentischen Geschmack der kamerunischen Küche zu bewahren und eine gesunde, hochwertige Ernährung zu gewährleisten."
+                        data-fr="Oui, nous travaillons exclusivement avec des aliments naturels et sans exhausteurs de goût. Nos ingrédients proviennent de sources durables afin de préserver le goût authentique de la cuisine camerounaise et de garantir une alimentation saine et de qualité."
+                        data-en="Yes, we work exclusively with natural foods and without flavor enhancers. Our ingredients come from sustainable sources to preserve the authentic taste of Cameroonian cuisine and ensure a healthy, high-quality diet.">
+                        Ja, wir arbeiten ausschließlich mit natürlichen Lebensmitteln und ohne Geschmacksverstärker.
+                        Unsere Zutaten stammen aus nachhaltigen Quellen, um den authentischen Geschmack der
+                        kamerunischen Küche zu bewahren und eine gesunde, hochwertige Ernährung zu gewährleisten.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question">
+                    <span><span class="faq-number">03.</span> <span
+                            data-de="Bieten Sie Optionen für spezielle Ernährungsbedürfnisse an?"
+                            data-fr="Proposez-vous des options pour des besoins alimentaires spécifiques ?"
+                            data-en="Do you offer options for special dietary needs?">Bieten Sie Optionen für spezielle
+                            Ernährungsbedürfnisse an?</span></span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-de="Absolut! Wir passen unsere Menüs an vegetarische, vegane, glutenfreie oder allergikerfreundliche Bedürfnisse an. Teilen Sie uns Ihre Anforderungen mit, und wir integrieren kamerunische Elemente, die zu Ihren Vorlieben passen, ohne den authentischen Charakter zu verlieren."
+                        data-fr="Absolument ! Nous adaptons nos menus aux besoins végétariens, végétaliens, sans gluten ou aux personnes allergiques. Faites-nous part de vos exigences et nous intégrerons des éléments camerounais qui correspondent à vos préférences sans en perdre le caractère authentique."
+                        data-en="Absolutely! We adapt our menus to vegetarian, vegan, gluten-free or allergy-friendly needs. Let us know your requirements and we will integrate Cameroonian elements that suit your preferences without losing the authentic character.">
+                        Absolut! Wir passen unsere Menüs an vegetarische, vegane, glutenfreie oder allergikerfreundliche
+                        Bedürfnisse an. Teilen Sie uns Ihre Anforderungen mit, und wir integrieren kamerunische
+                        Elemente, die zu Ihren Vorlieben passen, ohne den authentischen Charakter zu verlieren.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question">
+                    <span><span class="faq-number">04.</span> <span data-de="Wie sind Ihre Preise strukturiert?"
+                            data-fr="Comment sont structurés vos prix ?" data-en="How are your prices structured?">Wie
+                            sind Ihre Preise strukturiert?</span></span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-de="Unsere Preise richten sich nach der Personenzahl, dem Menüumfang und der Veranstaltungsart. Ein Basis-Catering startet ab 20 € pro Person, inklusive Feinkost-Elementen. Für ein detailliertes Angebot kontaktieren Sie uns – wir bieten transparente Preise ohne versteckte Kosten und Rabatte für Stammkunden."
+                        data-fr="Nos prix dépendent du nombre de personnes, de l'étendue du menu et du type d'événement. Un buffet de base commence à partir de 20 € par personne, incluant des éléments d'épicerie fine. Pour une offre détaillée, contactez-nous – nous proposons des prix transparents sans frais cachés et des remises pour nos clients réguliers."
+                        data-en="Our prices depend on the number of people, the scope of the menu and the type of event. Basic catering starts at €20 per person, including delicatessen elements. For a detailed quote, contact us – we offer transparent prices without hidden costs and discounts for regular customers.">
+                        Unsere Preise richten sich nach der Personenzahl, dem Menüumfang und der Veranstaltungsart. Ein
+                        Basis-Catering startet ab 20 € pro Person, inklusive Feinkost-Elementen. Für ein detailliertes
+                        Angebot kontaktieren Sie uns – wir bieten transparente Preise ohne versteckte Kosten und Rabatte
+                        für Stammkunden.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question">
+                    <span><span class="faq-number">05.</span> <span data-de="Können Sie Menüs individuell anpassen?"
+                            data-fr="Pouvez-vous personnaliser les menus ?" data-en="Can you customize menus?">Können
+                            Sie Menüs individuell anpassen?</span></span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-de="Ja, wir erstellen maßgeschneiderte Menüs basierend auf Ihren Wünschen. Ob Sie traditionelle kamerunische Gerichte wie Ndolé oder Suya wünschen oder eine Fusion mit lokalen Zutaten – wir besprechen alles im Vorfeld, um Ihre Veranstaltung perfekt zu gestalten."
+                        data-fr="Oui, nous élaborons des menus sur mesure basés sur vos souhaits. Que vous souhaitiez des plats traditionnels camerounais comme le Ndolé ou le Suya, ou une fusion avec des ingrédients locaux, nous discutons de tout à l'avance pour parfaire votre événement."
+                        data-en="Yes, we create tailored menus based on your wishes. Whether you want traditional Cameroonian dishes like Ndolé or Suya or a fusion with local ingredients – we discuss everything beforehand to make your event perfect.">
+                        Ja, wir erstellen maßgeschneiderte Menüs basierend auf Ihren Wünschen. Ob Sie traditionelle
+                        kamerunische Gerichte wie Ndolé oder Suya wünschen oder eine Fusion mit lokalen Zutaten – wir
+                        besprechen alles im Vorfeld, um Ihre Veranstaltung perfekt zu gestalten.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question">
+                    <span><span class="faq-number">06.</span> <span
+                            data-de="Wie funktioniert die Lieferung und der Aufbau?"
+                            data-fr="Comment fonctionnent la livraison et l'installation ?"
+                            data-en="How does delivery and setup work?">Wie funktioniert die Lieferung und der
+                            Aufbau?</span></span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-de="Wir liefern pünktlich zu Ihrem Veranstaltungsort und kümmern uns um den Aufbau, inklusive Dekoration und Servicepersonal bei Bedarf. Im süddeutschen Raum ist die Lieferung kostenlos ab einem bestimmten Bestellwert; für weitere Strecken berechnen wir eine Pauschale nach Absprache."
+                        data-fr="Nous livrons ponctuellement sur le lieu de votre événement et nous occupons de l'installation, y compris la décoration et le personnel de service si nécessaire. Dans le sud de l'Allemagne, la livraison est gratuite à partir d'un certain montant de commande ; pour de plus longues distances, nous facturons un forfait après accord."
+                        data-en="We deliver punctually to your event location and take care of the setup, including decoration and service staff if required. In southern Germany, delivery is free for orders above a certain value; for longer distances, we charge a flat rate by arrangement.">
+                        Wir liefern pünktlich zu Ihrem Veranstaltungsort und kümmern uns um den Aufbau, inklusive
+                        Dekoration und Servicepersonal bei Bedarf. Im süddeutschen Raum ist die Lieferung kostenlos ab
+                        einem bestimmten Bestellwert; für weitere Strecken berechnen wir eine Pauschale nach Absprache.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="faq-item reveal-on-scroll">
+                <div class="faq-question">
+                    <span><span class="faq-number">07.</span> <span data-de="Wie nachhaltig ist Ihr Catering?"
+                            data-fr="Dans quelle mesure votre service traiteur est-il durable ?"
+                            data-en="How sustainable is your catering?">Wie nachhaltig ist Ihr Catering?</span></span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-de="Als Familienunternehmen legen wir Wert auf Nachhaltigkeit: Wir verwenden regionale und saisonale Zutaten, minimieren Abfall durch wiederverwendbare Verpackungen und unterstützen faire Lieferketten aus Kamerun. So genießen Sie nicht nur leckeres Essen, sondern tragen auch zum Umweltschutz bei."
+                        data-fr="En tant qu'entreprise familiale, nous attachons une grande importance à la durabilité : nous utilisons des ingrédients régionaux et saisonniers, minimisons les déchets grâce à des emballages réutilisables et soutenons des chaînes d'approvisionnement équitables en provenance du Cameroun."
+                        data-en="As a family business, we value sustainability: we use regional and seasonal ingredients, minimize waste through reusable packaging and support fair supply chains from Cameroon. This way, you not only enjoy delicious food, but also contribute to environmental protection.">
+                        Als Familienunternehmen legen wir Wert auf Nachhaltigkeit: Wir verwenden regionale und saisonale
+                        Zutaten, minimieren Abfall durch wiederverwendbare Verpackungen und unterstützen faire
+                        Lieferketten aus Kamerun. So genießen Sie nicht nur leckeres Essen, sondern tragen auch zum
+                        Umweltschutz bei.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="faq-cta">
+        <div class="container reveal-on-scroll">
+            <h2 data-de="Haben Sie weitere Fragen?" data-fr="Avez-vous d'autres questions ?"
+                data-en="Do you have more questions?">Haben Sie weitere Fragen?</h2>
+            <p data-de="Ihre Frage war nicht dabei? Schreiben Sie uns – wir beraten Sie persönlich."
+                data-fr="Votre question ne figurait pas dans la liste ? Écrivez-nous – nous vous conseillerons personnellement."
+                data-en="Your question wasn't there? Write to us – we will advise you personally.">
+                Ihre Frage war nicht dabei? Schreiben Sie uns – wir beraten Sie persönlich.
+            </p>
+            <div class="mt-large">
+                <a href="index.html#contact" class="btn btn-primary" data-de="Kontakt aufnehmen"
+                    data-fr="Contactez-nous" data-en="Contact Us">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Simplified/Same as Index but adapted) -->
+    <footer class="footer">
+        <div class="container center">
+            <div class="footer-links"
+                style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+                <a href="index.html" data-de="Startseite" data-fr="Accueil" data-en="Home">Startseite</a>
+                <a href="impressum.html" data-de="Impressum" data-fr="Mentions légales"
+                    data-en="Legal Notice">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-fr="Confidentialité"
+                    data-en="Privacy Policy">Datenschutz</a>
+                <a href="agb.html" data-de="AGB" data-fr="CGV" data-en="T&C">AGB</a>
+                <a href="widerruf.html" data-de="Widerruf" data-fr="Rétractation" data-en="Cancellation">Widerruf</a>
+            </div>
+            <div class="copyright small-text">
+                &copy; 2026 OTIAA. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/4915511404383" class="whatsapp-float" target="_blank" aria-label="WhatsApp Business">
+        <img src="assets/whatsapp_icon.png" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+
+                // Toggle current one
+                faqItem.classList.toggle('active');
+
+                // Close other items (optional)
+                /*
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== faqItem) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                */
+            });
+        });
+    </script>
+</body>
+
+</html>
