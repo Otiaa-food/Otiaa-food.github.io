@@ -631,8 +631,8 @@ ul {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    min-height: 440px;
-    /* Aligns buttons in initial collapsed state */
+    min-height: 480px;
+    /* Precise alignment for collapsed state across all products */
 }
 
 @media (max-width: 768px) {
@@ -1009,6 +1009,13 @@ ul {
     width: 100%;
 }
 
+/* FAQ CTA */
+.faq-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* WhatsApp Float */
 .whatsapp-float {
     position: fixed;
@@ -1037,8 +1044,10 @@ ul {
 }
 
 .whatsapp-float img {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+    /* Ensures a white phone icon on the green background */
 }
 
 .social-link {
