@@ -631,6 +631,15 @@ ul {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    min-height: 440px;
+    /* Aligns buttons in initial collapsed state */
+}
+
+@media (max-width: 768px) {
+    .product-details {
+        min-height: auto;
+        /* Allow auto-height on mobile for better stacking */
+    }
 }
 
 .product-sub {
@@ -1011,17 +1020,20 @@ ul {
     color: #fff;
     border-radius: 50px;
     text-align: center;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: var(--transition);
+    border: 2px solid white;
+    opacity: 1;
 }
 
 .whatsapp-float:hover {
     transform: scale(1.1);
     background-color: #128c7e;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .whatsapp-float img {
