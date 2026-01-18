@@ -437,16 +437,24 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    align-items: start;
+    /* Prevent items from stretching to the tallest in row */
 }
 
 .grid-3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    align-items: start;
+    /* Prevent items from stretching to the tallest in row */
 }
 
 .product-grid {
-    align-items: stretch !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start !important;
+    /* Critical: allows cards to have independent heights */
 }
 
 .align-center {
@@ -824,16 +832,20 @@ ul {
 /* Product Info Accordion */
 .product-bottom-wrapper {
     margin-top: auto;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-}
-
-.product-info-accordion {
+    padding-top: 1.5rem;
     border-top: 1px solid rgba(140, 74, 47, 0.1);
 }
 
+.product-info-accordion {
+    margin: 1rem 0;
+}
+
 .product-info-item {
-    border-bottom: 1px solid rgba(140, 74, 47, 0.1);
+    border-bottom: 1px solid rgba(140, 74, 47, 0.05);
+}
+
+.product-info-item:last-child {
+    border-bottom: none;
 }
 
 .product-info-header {
@@ -845,13 +857,11 @@ ul {
     background: none;
     border: none;
     cursor: pointer;
-    font-family: var(--font-head);
-    font-weight: 700;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
     color: var(--c-text-accent);
-    font-size: 0.95rem;
     transition: var(--transition);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
 .product-info-header:hover {
@@ -861,10 +871,10 @@ ul {
 .product-info-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease;
-    font-size: 0.9rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0.85rem;
+    color: #555;
     line-height: 1.6;
-    color: var(--c-text-main);
 }
 
 .product-info-item.active .product-info-content {
@@ -1106,13 +1116,28 @@ ul {
     .hero {
         height: 80vh;
     }
-
-    .desktop-only {
-        display: inline-block;
-    }
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 60vh;
+        padding: 120px 0 60px;
+    }
+
+    .section {
+        padding: 3rem 0;
+        margin-bottom: 1rem;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -1126,10 +1151,11 @@ ul {
         width: 100%;
         height: calc(100vh - 60px);
         text-align: center;
-        transition: 0.3s;
-        padding-top: 2rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 3rem 2rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         z-index: 999;
+        overflow-y: auto;
     }
 
     .nav-menu.active {
@@ -1138,38 +1164,64 @@ ul {
 
     .nav-list {
         flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .reverse-mobile {
-        display: flex;
-        flex-direction: column-reverse;
         gap: 2rem;
     }
 
-    .desktop-only {
-        display: none;
+    .nav-link {
+        font-size: 1.1rem;
     }
 
-    .nav-controls-mobile {
-        display: block;
-        margin-top: 2rem;
-    }
-
-    .footer-content-grid {
+    .grid-2,
+    .grid-3,
+    .product-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card,
+    .product-card {
+        max-width: 100%;
+    }
+
+    .home-cooking-box {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .handwritten-font {
+        font-size: 1.2rem;
+    }
+
+    .transition-highlight {
+        font-size: 1.4rem;
+    }
+
+    footer .footer-content-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
         gap: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0 0.75rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .product-img-box {
+        height: 180px;
+    }
+
+    .product-details {
+        padding: 1.1rem;
     }
 }
