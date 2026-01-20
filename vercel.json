@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/geheimrezept",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/unsere-speisen",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
