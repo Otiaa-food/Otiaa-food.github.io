@@ -1,1 +1,909 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTIAA - Kamerunische Küche & Catering</title>
+    <meta name="description"
+        content="Authentisches kamerunisches Catering & Feinkost von Berthe Ngnoubamdjum. OTIAA bringt die kulinarische Identität Kameruns auf Ihr Event.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-wrapper">
+                <img src="assets/logo.png" alt="OTIAA Logo" class="nav-logo">
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#history" class="nav-link" data-de="Unsere Geschichte" data-fr="Notre Histoire"
+                            data-en="Our Story">Unsere Geschichte</a></li>
+                    <li><a href="#catering" class="nav-link" data-de="Catering" data-fr="Traiteur"
+                            data-en="Catering">Catering</a></li>
+                    <li><a href="#classes" class="nav-link" data-de="Kochkurse" data-fr="Cours de Cuisine"
+                            data-en="Cooking Classes">Kochkurse</a></li>
+                    <li><a href="#products" class="nav-link" data-de="Unsere Feinkost" data-fr="Nos Produits"
+                            data-en="Our Delicatessen">Unsere Feinkost</a></li>
+                    <li><a href="#contact" class="nav-link" data-de="Kontakt" data-fr="Contact"
+                            data-en="Contact">Kontakt</a></li>
+                </ul>
+                <a href="https://instagram.com/otiaa_food" target="_blank" class="nav-social" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@otiaa4" target="_blank" class="nav-social" aria-label="TikTok">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.62-1.1-.28-.24-.59-.52-.81-.88v13.3c0 1.64-1.33 2.97-2.97 2.97-1.64 0-2.97-1.33-2.97-2.97 0-1.64 1.33-2.97 2.97-2.97.17 0 .35.02.52.05v-4.22c-2.49.2-4.5 2.28-4.5 4.83 0 2.66 2.17 4.83 4.83 4.83 2.66 0 4.83-2.17 4.83-4.83V4.2c1.94 1.45 4.19 1.69 6.27.06-.05-1.41-.02-2.83-.02-4.24z" />
+                    </svg>
+                </a>
+                <!-- Mobile Language Flags -->
+                <div class="nav-controls-mobile">
+                    <div class="lang-flags">
+                        <button class="lang-btn active" data-lang="de" aria-label="Deutsch"
+                            title="Deutsch">🇩🇪</button>
+                        <button class="lang-btn" data-lang="fr" aria-label="Français" title="Français">🇫🇷</button>
+                        <button class="lang-btn" data-lang="en" aria-label="English" title="English">🇬🇧</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-controls">
+                <!-- Desktop Language Flags -->
+                <div class="lang-flags desktop-only">
+                    <button class="lang-btn active" data-lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</button>
+                    <button class="lang-btn" data-lang="fr" aria-label="Français" title="Français">🇫🇷</button>
+                    <button class="lang-btn" data-lang="en" aria-label="English" title="English">🇬🇧</button>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Kamerunische Festtafel">
+            <div class="overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="fade-in-up" data-de="Kamerunische Küche.<br>Mit Liebe seit Generationen."
+                data-fr="Cuisine camerounaise.<br>Préparée avec amour."
+                data-en="Cameroonian Cuisine.<br>Made with Love for Generations.">
+                Kamerunische Küche.<br>Mit Liebe seit Generationen.
+            </h1>
+            <p class="subtitle fade-in-up delay-1" data-de="Familiengeführtes Catering & Handgemachte Produkte"
+                data-fr="Traiteur familial & Produits faits main" data-en="Family-Run Catering & Handmade Products">
+                Familiengeführtes Catering & Handgemachte Produkte
+            </p>
+            <a href="#history" class="btn btn-primary fade-in-up delay-2" data-de="Unsere Geschichte entdecken"
+                data-fr="Découvrir notre histoire" data-en="Discover Our Story">
+                Unsere Geschichte entdecken
+            </a>
+        </div>
+    </header>
+
+    <!-- History Section -->
+    <section class="section history" id="history">
+        <div class="container">
+            <div class="grid-2">
+                <div class="image-wrapper reveal-on-scroll">
+                    <img src="assets/berthe_real.jpg" alt="Berthe Ngnoubamdjum">
+                    <span class="img-credit">Foto: Naomi Hattler</span>
+                </div>
+                <div class="text-content reveal-on-scroll">
+                    <h2 data-de="Unsere Geschichte" data-fr="Notre Histoire" data-en="Our Story">Unsere Geschichte</h2>
+                    <h3 class="accent-text" data-de="Frau Berthe Ngnoubamdjum" data-fr="Mme Berthe Ngnoubamdjum"
+                        data-en="Mrs. Berthe Ngnoubamdjum">Frau Berthe Ngnoubamdjum</h3>
+
+                    <div class="history-text">
+                        <p data-de="Mein Name ist Berthe Ngnoubamdjum und ich freue mich Sie bei uns willkommen heißen zu dürfen. Tauchen Sie ein in die traditionell kulinarische Welt Kameruns und überzeugen Sie sich von unseren einzigartigen Produkten und Serviceleistungen."
+                            data-fr="Je m'appelle Berthe Ngnoubamdjum et je suis heureuse de vous accueillir. Plongez dans le monde culinaire traditionnel du Cameroun et laissez-vous convaincre par nos produits et services uniques."
+                            data-en="My name is Berthe Ngnoubamdjum and I am delighted to welcome you. Immerse yourself in the traditional culinary world of Cameroon and discover our unique products and services.">
+                            Mein Name ist Berthe Ngnoubamdjum und ich freue mich Sie bei uns willkommen heißen zu
+                            dürfen. Tauchen Sie ein in die traditionell kulinarische Welt Kameruns und überzeugen Sie
+                            sich von unseren einzigartigen Produkten und Serviceleistungen.
+                        </p>
+                        <p data-de="Lassen Sie den Alltag hinter sich und genießen Sie die sinnliche Vielfalt Westafrikas. Ich koche aus Leidenschaft frische und schmackhafte Gerichte aus meiner Heimat Kamerun."
+                            data-fr="Laissez le quotidien derrière vous et profitez de la diversité sensuelle de l'Afrique de l'Ouest. Je cuisine avec passion des plats frais et savoureux de mon pays natal, le Cameroun."
+                            data-en="Leave everyday life behind and enjoy the sensual diversity of West Africa. I cook fresh and delicious dishes from my homeland Cameroon with passion.">
+                            Lassen Sie den Alltag hinter sich und genießen Sie die sinnliche Vielfalt Westafrikas. Ich
+                            koche aus Leidenschaft frische und schmackhafte Gerichte aus meiner Heimat Kamerun.
+                        </p>
+                        <p data-de="Mein Versprechen - Ich verwende ausschließlich erlesene Zutaten ohne Konservierungsstoffe und ohne Zuckerzusätze oder künstliche Aromen."
+                            data-fr="Ma promesse - J'utilise exclusivement des ingrédients sélectionnés sans conservateurs, sans sucre ajouté ni arômes artificiels."
+                            data-en="My promise - I use only premium ingredients without preservatives, added sugar or artificial flavors.">
+                            Mein Versprechen - Ich verwende ausschließlich erlesene Zutaten ohne Konservierungsstoffe
+                            und ohne Zuckerzusätze oder künstliche Aromen.
+                        </p>
+                        <p data-de="Wir pflegen eine besondere Beziehung zum Essen. Als kleine Zugabe zu den Speisen wird stets eine scharfe Chillisauce angeboten. Durch meine Kreativität und die häufige Nachfrage meiner Gäste entstanden so die ersten eigenen Produkte, die nun in Form der Chilisauce MIFI und der Kräutermischung MANDARA verwirklicht wurden."
+                            data-fr="Nous entretenons une relation particulière avec la nourriture. Une sauce pimentée est toujours proposée en accompagnement. Grâce à ma créativité et à la forte demande de mes invités, les premiers produits propres ont vu le jour, désormais réalisés sous la forme de la sauce piment MIFI et du mélange d'herbes MANDARA."
+                            data-en="We have a special relationship with food. A spicy chili sauce is always offered as a side dish. Through my creativity and the frequent requests of my guests, the first own products were created, now realized in the form of the chili sauce MIFI and the herb mixture MANDARA.">
+                            Wir pflegen eine besondere Beziehung zum Essen. Als kleine Zugabe zu den Speisen wird stets
+                            eine scharfe Chillisauce angeboten. Durch meine Kreativität und die häufige Nachfrage meiner
+                            Gäste entstanden so die ersten eigenen Produkte, die nun in Form der Chilisauce MIFI und der
+                            Kräutermischung MANDARA verwirklicht wurden.
+                        </p>
+                    </div>
+
+                    <div class="values-list">
+                        <span class="tag">Authentizität</span>
+                        <span class="tag">Handwerk</span>
+                        <span class="tag">Familie</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section class="section catering bg-alt" id="catering">
+        <div class="container">
+            <div class="section-header center reveal-on-scroll">
+                <h2 data-de="Catering" data-fr="Service Traiteur" data-en="Catering">Catering</h2>
+                <p class="catering-highlight" data-de="Für Ihre besonderen Momente und professionellen Events."
+                    data-fr="Pour vos moments spéciaux et événements professionnels."
+                    data-en="For your special moments and professional events.">
+                    Für Ihre besonderen Momente und professionellen Events.
+                </p>
+                <div class="mt-small" style="text-align: center; max-width: 800px; margin: 2rem auto;">
+                    <p data-de="Seit nun mehr als 25 Jahren biete ich mit meinem Service anspruchsvolle Kochkunst für die Gäste von Festivals, Kochkursen, Messen und privaten sowie betrieblichen Feierlichkeiten an. Schlussendlich ist es die Qualität der zubereiteten Speisen und sorgfältige Verarbeitung, welche meine Dienstleistung so erfolgreich gemacht hat."
+                        data-fr="Depuis plus de 25 ans, je propose avec mon service un art culinaire exigeant pour les invités de festivals, cours de cuisine, foires, ainsi que pour des fêtes privées et d'entreprise. En fin de compte, c'est la qualité des plats préparés et le soin apporté à leur élaboration qui ont fait le succès de ma prestation."
+                        data-en="For more than 25 years, I have been offering sophisticated culinary art for guests at festivals, cooking classes, trade fairs, and private as well as corporate celebrations. Ultimately, it is the quality of the prepared dishes and careful processing that has made my service so successful.">
+                        Seit nun mehr als 25 Jahren biete ich mit meinem Service anspruchsvolle Kochkunst für die Gäste
+                        von Festivals, Kochkursen, Messen und privaten sowie betrieblichen Feierlichkeiten an.
+                        Schlussendlich ist es die Qualität der zubereiteten Speisen und sorgfältige Verarbeitung, welche
+                        meine Dienstleistung so erfolgreich gemacht hat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid-2 gap-large">
+                <!-- Private -->
+                <div class="card reveal-on-scroll">
+                    <div class="card-image">
+                        <img src="assets/catering_food_real.jpg" alt="Private Catering">
+                        <span class="img-credit">Foto: Naomi Hattler</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 data-de="Privates Catering" data-fr="Traiteur Privé" data-en="Private Catering">Privates
+                            Catering</h3>
+                        <p data-de="Erleben Sie kulinarische Momente, die über das Gewöhnliche hinausgehen. Ob runder Geburtstag, herzliche Familienfeier oder ein exklusives privates Event – wir bringen die authentischen Aromen Kameruns direkt zu Ihnen. Unser Fokus liegt auf einem persönlichen, unvergleichlichen Geschmackserlebnis, das Ihre Gäste verzaubert und Ihre Feier zu etwas ganz Besonderem macht."
+                            data-fr="Vivez des moments culinaires qui sortent de l'ordinaire. Qu'il s'agisse d'un anniversaire important, d'une fête de famille chaleureuse ou d'un événement privé exclusif, nous apportons les saveurs authentiques du Cameroun directement chez vous. Notre objectif est de vous offrir une expérience gustative personnelle et incomparable qui enchantera vos invités."
+                            data-en="Experience culinary moments that go beyond the ordinary. Whether it's a milestone birthday, a warm family celebration, or an exclusive private event – we bring the authentic flavors of Cameroon directly to you. Our focus is on a personal, incomparable taste experience that enchants your guests.">
+                            Erleben Sie kulinarische Momente, die über das Gewöhnliche hinausgehen. Ob runder
+                            Geburtstag, herzliche Familienfeier oder ein exklusives privates Event – wir bringen die
+                            authentischen Aromen Kameruns direkt zu Ihnen. Unser Fokus liegt auf einem persönlichen,
+                            unvergleichlichen Geschmackserlebnis, das Ihre Gäste verzaubert und Ihre Feier zu etwas ganz
+                            Besonderem macht.
+                        </p>
+                        <ul class="list-styled">
+                            <li data-de="Unvergessliche Geburtstagsfeiern" data-fr="Fêtes d'anniversaire inoubliables"
+                                data-en="Unforgettable birthday parties">Unvergessliche Geburtstagsfeiern</li>
+                            <li data-de="Besondere Familienfeste" data-fr="Fêtes de famille spéciales"
+                                data-en="Special family celebrations">Besondere Familienfeste</li>
+                            <li data-de="Authentische & persönliche Betreuung"
+                                data-fr="Accompagnement authentique et personnel"
+                                data-en="Authentic & personal service">Authentische & persönliche Betreuung</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="card reveal-on-scroll delay-1">
+                    <div class="card-image">
+                        <img src="assets/catering_buffet_real.jpg" alt="Business Catering">
+                    </div>
+                    <div class="card-body">
+                        <h3 data-de="Firmencatering" data-fr="Traiteur d'Entreprise" data-en="Corporate Catering">
+                            Firmencatering</h3>
+                        <p data-de="Setzen Sie bei Ihrer nächsten Firmenfeier, dem Sommerfest oder wichtigen Business-Events auf Professionalität und Qualität. OTIAA bietet Ihnen ein zuverlässiges Catering-Erlebnis, das bei Mitarbeitenden und Geschäftspartnern einen bleibenden Eindruck hinterlässt. Mit handwerklicher Präzision und außergewöhnlichen Speisen sorgen wir für den kulinarischen Rahmen."
+                            data-fr="Misez sur le professionnalisme et la qualité pour votre prochaine fête d'entreprise, fête d'été ou événement professionnel important. OTIAA vous offre une expérience traiteur fiable qui laissera une impression durable à vos collaborateurs et partenaires commerciaux."
+                            data-en="Count on professionalism and quality for your next company party, summer festival, or important business event. OTIAA offers you a reliable catering experience that leaves a lasting impression on employees and business partners alike.">
+                            Setzen Sie bei Ihrer nächsten Firmenfeier, dem Sommerfest oder wichtigen Business-Events auf
+                            Professionalität und Qualität. OTIAA bietet Ihnen ein zuverlässiges Catering-Erlebnis, das
+                            bei Mitarbeitenden und Geschäftspartnern einen bleibenden Eindruck hinterlässt. Mit
+                            handwerklicher Präzision und außergewöhnlichen Speisen sorgen wir für den kulinarischen
+                            Rahmen.
+                        </p>
+                        <ul class="list-styled">
+                            <li data-de="Zuverlässigkeit & höchste Qualität" data-fr="Fiabilité et qualité maximale"
+                                data-en="Reliability & highest quality">Zuverlässigkeit & höchste Qualität</li>
+                            <li data-de="Firmen- & Sommerfeste" data-fr="Fêtes d'entreprise et d'été"
+                                data-en="Company & Summer Festivals">Firmen- & Sommerfeste</li>
+                            <li data-de="Beeindruckende Business-Events" data-fr="Événements d'affaires impressionnants"
+                                data-en="Impressive business events">Beeindruckende Business-Events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center mt-large">
+                <a href="#contact" class="btn btn-secondary" data-de="Catering anfragen" data-fr="Demander un traiteur"
+                    data-en="Request Catering">Catering anfragen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cooking Classes -->
+    <section class="section classes" id="classes">
+        <div class="container">
+            <div class="section-header center reveal-on-scroll">
+                <h2 data-de="Kulinarische Erlebnisse" data-fr="Expériences culinaires" data-en="Culinary Experiences">
+                    Kulinarische Erlebnisse</h2>
+                <h3 class="accent-text" data-de="Entdecken Sie die Geheimnisse Kameruns"
+                    data-fr="Découvrez les secrets du Cameroun" data-en="Discover the secrets of Cameroon">Entdecken Sie
+                    die Geheimnisse Kameruns</h3>
+            </div>
+
+            <!-- Grid: Corporate & Private -->
+            <div class="grid-2 gap-large mt-large">
+                <!-- Firmenkochkurs -->
+                <div class="card reveal-on-scroll">
+                    <div class="card-image">
+                        <img src="assets/workshop_firmen.jpg" alt="Firmenkochkurs Teambuilding">
+                        <span class="img-credit">Foto: Naomi Hattler</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 data-de="Firmenkochkurs" data-fr="Cours de cuisine d'entreprise"
+                            data-en="Corporate Cooking Class">Firmenkochkurs</h4>
+                        <p data-de="Stärken Sie den Teamgeist bei einem exklusiven Teambuilding Event. Gemeinsames Kochen und der interaktive Austausch in der Küche schaffen eine perfekte Basis für eine erfolgreiche Zusammenarbeit. Wir bieten attraktive und professionelle Konditionen für Firmen und Unternehmen jeder Größe."
+                            data-fr="Renforcez l'esprit d'équipe lors d'un événement exclusif de teambuilding. Cuisiner ensemble et échanger en cuisine créent une base parfaite pour une collaboration réussie. Nous proposons des conditions professionnelles pour les entreprises."
+                            data-en="Strengthen team spirit with an exclusive teambuilding event. Cooking together and interactive exchange in the kitchen create a perfect foundation for successful collaboration. We offer attractive and professional conditions for companies of all sizes.">
+                            Stärken Sie den Teamgeist bei einem exklusiven Teambuilding Event. Gemeinsames Kochen und
+                            der interaktive Austausch in der Küche schaffen eine perfekte Basis für eine erfolgreiche
+                            Zusammenarbeit. Wir bieten attraktive und professionelle Konditionen für Firmen und
+                            Unternehmen jeder Größe.
+                        </p>
+                        <ul class="list-styled">
+                            <li data-de="Nachhaltiges Teambuilding Event" data-fr="Événement de teambuilding durable"
+                                data-en="Sustainable Teambuilding Event">Nachhaltiges Teambuilding Event</li>
+                            <li data-de="Professionelle Moderation & Anleitung"
+                                data-fr="Animation et instructions professionnelles"
+                                data-en="Professional moderation & guidance">Professionelle Moderation & Anleitung</li>
+                            <li data-de="Individuelle Terminplanung" data-fr="Planification individuelle"
+                                data-en="Individual scheduling">Individuelle Terminplanung</li>
+                        </ul>
+                        <div class="mt-small">
+                            <a href="#contact" class="btn btn-secondary" data-de="Kontakt aufnehmen"
+                                data-fr="Contactez-nous" data-en="Contact Us">Kontakt aufnehmen</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privater Kochkurs -->
+                <div class="card reveal-on-scroll delay-1">
+                    <div class="card-image">
+                        <img src="assets/workshop_privat.jpg" alt="Privater Kochkurs">
+                        <span class="img-credit">Foto: Naomi Hattler</span>
+                    </div>
+                    <div class="card-body">
+                        <h4 data-de="Privater Kochkurs mit Freunden" data-fr="Cours privé entre amis"
+                            data-en="Private Cooking Class with Friends">Privater Kochkurs mit Freunden</h4>
+                        <p data-de="Eine immer beliebter werdende Freizeitaktivität für Freundesgruppen und Familien. Gemeinsam kochen, lachen und Neues ausprobieren – in einer lockereren, herzlichen und ganz persönlichen Atmosphäre entdecken Sie die authentischen Rezepte Westafrikas."
+                            data-fr="Une activité de loisir de plus en plus populaire pour les groupes d'amis et les familles. Cuisiner ensemble, rire et essayer de nouvelles choses – dans une atmosphère décontractée et personnelle."
+                            data-en="An increasingly popular leisure activity for groups of friends and families. Cooking together, laughing and trying new things – in a casual, warm and very personal atmosphere, you will discover the authentic recipes of West Africa.">
+                            Eine immer beliebter werdende Freizeitaktivität für Freundesgruppen und Familien. Gemeinsam
+                            kochen, lachen und Neues ausprobieren – in einer lockereren, herzlichen und ganz
+                            persönlichen Atmosphäre entdecken Sie die authentischen Rezepte Westafrikas.
+                        </p>
+                        <ul class="list-styled">
+                            <li data-de="Ideal für Freundesgruppen" data-fr="Idéal pour les groupes d'amis"
+                                data-en="Ideal for groups of friends">Ideal für Freundesgruppen</li>
+                            <li data-de="Locker & Herzlich" data-fr="Décontracté et chaleureux" data-en="Casual & Warm">
+                                Locker & Herzlich</li>
+                            <li data-de="Eigene Kreationen genießen" data-fr="Dégustez vos propres créations"
+                                data-en="Enjoy your own creations">Eigene Kreationen genießen</li>
+                        </ul>
+                        <div class="mt-small">
+                            <a href="#contact" class="btn btn-secondary" data-de="Kontakt aufnehmen"
+                                data-fr="Contactez-nous" data-en="Contact Us">Kontakt aufnehmen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home-Cooking -->
+            <div class="mt-large reveal-on-scroll">
+                <div class="home-cooking-box">
+                    <h3 class="transition-highlight center"
+                        data-de="Oder doch lieber bekocht werden – gemeinsam mit Freunden?"
+                        data-fr="Ou préférez-vous qu'on cuisine pour vous - entre amis ?"
+                        data-en="Or would you rather have someone cook for you - together with friends?">
+                        Oder doch lieber bekocht werden – gemeinsam mit Freunden?
+                    </h3>
+                    <div class="grid-2 align-center">
+                        <div class="text-content">
+                            <h3 data-de="Exklusives Home-Cooking" data-fr="Cuisine à domicile exclusive"
+                                data-en="Exclusive Home-Cooking">Exklusives Home-Cooking</h3>
+                            <p data-de="Lassen Sie sich in Ihren eigenen vier Wänden kulinarisch verwöhnen. Berthe kreiert in enger Absprache mit Ihnen ein persönliches 3-Gänge-Menü, das Ihre Gäste begeistern wird. Wir kümmern uns um alle Details, damit Sie sich ganz auf Ihre Gäste konzentrieren können."
+                                data-fr="Laissez-vous choyer culinairement dans vos propres murs. Berthe crée pour vous un menu personnel de 3 plats. Nous nous occupons de tous les détails."
+                                data-en="Let yourself be pampered culinarially within your own four walls. In close consultation with you, Berthe creates a personal 3-course menu that will inspire your guests. We take care of all the details.">
+                                Lassen Sie sich in Ihren eigenen vier Wänden kulinarisch verwöhnen. Berthe kreiert in
+                                enger Absprache mit Ihnen ein persönliches 3-Gänge-Menü, das Ihre Gäste begeistern wird.
+                                Wir kümmern uns um alle Details, damit Sie sich ganz auf Ihre Gäste konzentrieren
+                                können.
+                            </p>
+                            <ul class="list-check">
+                                <li data-de="Individuelles 3-Gänge-Menü nach Absprache"
+                                    data-fr="Menu 3 plats personnalisé"
+                                    data-en="Individual 3-course menu upon consultation">Individuelles 3-Gänge-Menü nach
+                                    Absprache</li>
+                                <li data-de="Kompletter Einkauf wird übernommen" data-fr="Courses prises en charge"
+                                    data-en="Complete shopping included">Kompletter Einkauf wird übernommen</li>
+                                <li data-de="Stimmungsvolle Begleitmusik während des Essens"
+                                    data-fr="Musique d'ambiance" data-en="Atmospheric background music during dinner">
+                                    Stimmungsvolle Begleitmusik während des Essens</li>
+                                <li data-de="Rezepte zum Nachkochen inklusive" data-fr="Recettes incluses"
+                                    data-en="Recipes to cook at home included">Rezepte zum Nachkochen inklusive</li>
+                                <li data-de="Berthe übernimmt den kompletten Abwasch & die Reinigung"
+                                    data-fr="Nettoyage complet inclus"
+                                    data-en="Berthe takes care of all cleaning and washing up">Berthe übernimmt den
+                                    kompletten Abwasch & die Reinigung</li>
+                                <li data-de="Authentische Geschichten zur kamerunischen Kultur"
+                                    data-fr="Histoires culturelles"
+                                    data-en="Authentic stories about Cameroonian culture">Authentische Geschichten zur
+                                    kamerunischen Kultur</li>
+                            </ul>
+                            <div class="mt-large">
+                                <a href="#contact" class="btn btn-primary" data-de="Kontakt aufnehmen"
+                                    data-fr="Contactez-nous" data-en="Contact Us">Kontakt aufnehmen</a>
+                            </div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="assets/home_cooking.jpg" alt="Home Cooking mit Berthe">
+                            <span class="img-credit">Foto: Naomi Hattler</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VHS Section -->
+            <div class="section-separator reveal-on-scroll"></div>
+            <div class="mt-large reveal-on-scroll">
+                <div class="grid-2 align-center">
+                    <div class="text-content">
+                        <h4 data-de="Kochkurse an der VHS Pforzheim" data-fr="Cours à la VHS Pforzheim"
+                            data-en="Classes at VHS Pforzheim">Kochkurse an der VHS Pforzheim</h4>
+                        <div class="appointment-hint" style="margin-bottom: 1rem;">
+                            <span data-de="Nächster Termin am 13.02." data-fr="Prochain rendez-vous le 13/02"
+                                data-en="Next date on Feb 13th">Nächster Termin am 13.02.</span>
+                        </div>
+                        <p data-de="Entdecken Sie die Kunst der kamerunischen Küche in meinen regelmäßigen Kursen an der VHS Pforzheim. In entspannter Atmosphäre führe ich Sie in die Welt der afrikanischen Gewürze und Traditionen ein. Offen für alle – vom Anfänger bis zum Hobbykoch."
+                            data-fr="Découvrez l'art de la cuisine camerounaise dans mes cours réguliers à la VHS Pforzheim. Ouvert à tous."
+                            data-en="Discover the art of Cameroonian cuisine in my regular courses at VHS Pforzheim. In a relaxed atmosphere, I introduce you to the world of African spices and traditions. Open to everyone - from beginners to hobby cooks.">
+                            Entdecken Sie die Kunst der kamerunischen Küche in meinen regelmäßigen Kursen an der VHS
+                            Pforzheim. In entspannter Atmosphäre führe ich Sie in die Welt der afrikanischen Gewürze und
+                            Traditionen ein. Offen für alle – vom Anfänger bis zum Hobbykoch.
+                        </p>
+                        <div class="mt-small">
+                            <a href="https://www.vhs-pforzheim.de/suche/kursdetails.html/A/course/P/178/I/505-C-12346698/afrikanische-k%C3%BCche"
+                                target="_blank" class="btn btn-secondary" data-de="Zur Kursanmeldung"
+                                data-fr="S'inscrire" data-en="Register Now">Zur Kursanmeldung</a>
+                        </div>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="assets/cooking_vhs_1.jpg" alt="VHS Pforzheim Kochkurs">
+                        <span class="img-credit">Foto: Naomi Hattler</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section products bg-alt" id="products">
+        <div class="container">
+            <div class="section-header center reveal-on-scroll">
+                <h2 data-de="Unsere Feinkost" data-fr="Nos Produits" data-en="Our Delicatessen">Unsere Feinkost</h2>
+                <p class="handwritten-font" data-de="Ein Stück Kamerun für Zuhause."
+                    data-fr="Un morceau du Cameroun pour la maison." data-en="A piece of Cameroon for your home.">Ein
+                    Stück Kamerun für Zuhause.</p>
+            </div>
+
+            <div class="grid-3 product-grid">
+                <!-- MIFI -->
+                <div class="product-card reveal-on-scroll">
+                    <div class="product-img-box">
+                        <img src="assets/mifi_real.jpg" alt="MIFI Chillisauce">
+                    </div>
+                    <div class="product-details">
+                        <h4 data-de="MIFI" data-fr="MIFI" data-en="MIFI">MIFI</h4>
+                        <p class="product-sub" data-de="Unsere hausgemachte Chilisauce"
+                            data-fr="Notre sauce piment maison" data-en="Our homemade chili sauce">Unsere hausgemachte
+                            Chilisauce</p>
+                        <p class="product-desc"
+                            data-de="Kräftig, aromatisch und authentisch – MIFI ist unsere hausgemachte Chilisauce nach Familienrezept. Perfekt zum Verfeinern von Fleisch-, Fisch- und Gemüsegerichten."
+                            data-fr="Puissante, aromatique et authentique – MIFI est notre sauce piment maison selon une recette familiale. Parfait pour affiner viandes, poissons et légumes."
+                            data-en="Powerful, aromatic and authentic – MIFI is our homemade chili sauce according to a family recipe. Perfect for refining meat, fish and vegetable dishes.">
+                            Kräftig, aromatisch und authentisch – MIFI ist unsere hausgemachte Chilisauce nach
+                            Familienrezept. Perfekt zum Verfeinern von Fleisch-, Fisch- und Gemüsegerichten.
+                        </p>
+                        <ul class="quality-list">
+                            <li data-de="Keine künstlichen Zusatzstoffe" data-fr="Sans additifs artificiels"
+                                data-en="No artificial additives">Keine künstlichen Zusatzstoffe</li>
+                            <li data-de="Keine Geschmacksverstärker" data-fr="Sans exhausteurs de goût"
+                                data-en="No flavor enhancers">Keine Geschmacksverstärker</li>
+                            <li data-de="Keine künstlichen Aromen" data-fr="Sans arômes artificiels"
+                                data-en="No artificial flavors">Keine künstlichen Aromen</li>
+                        </ul>
+
+                        <!-- Info Accordion MIFI -->
+                        <div class="product-info-accordion">
+                            <!-- Ingredients -->
+                            <div class="product-info-item">
+                                <button class="product-info-header" aria-expanded="false">
+                                    <span data-de="Zutaten" data-fr="Ingrédients" data-en="Ingredients">Zutaten</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="product-info-content"
+                                    data-de="Chilli, Zwiebeln, Tomatenmark, Knoblauch, Djancent, Petersilie, Meersalz, frischer Zitronensaft, Olivenöl, Wasser"
+                                    data-fr="Chili, oignons, concentré de tomate, ail, Djansang, persil, sel marin, jus de citron frais, huile d'olive, eau"
+                                    data-en="Chili, onions, tomato paste, garlic, Djansang, parsley, sea salt, fresh lemon juice, olive oil, water">
+                                    Chilli, Zwiebeln, Tomatenmark, Knoblauch, Djancent, Petersilie, Meersalz, frischer
+                                    Zitronensaft, Olivenöl, Wasser
+                                </div>
+                            </div>
+                            <!-- Nutrition -->
+                            <div class="product-info-item">
+                                <button class="product-info-header" aria-expanded="false">
+                                    <span data-de="Nährwerte" data-fr="Valeurs nutritionnelles"
+                                        data-en="Nutrition">Nährwerte</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="product-info-content">
+                                    <span class="nutrition-note" data-de="Durchschnittlich pro 100 g"
+                                        data-fr="Moyenne pour 100 g" data-en="Average per 100 g">Durchschnittlich pro
+                                        100 g</span>
+                                    <table class="nutrition-table">
+                                        <tr>
+                                            <td data-de="Energie" data-fr="Énergie" data-en="Energy">Energie</td>
+                                            <td>800 kJ / 253 kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="Fett" data-fr="Matières grasses" data-en="Fat">Fett</td>
+                                            <td>19,8 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="davon gesättigte Fettsäuren" data-fr="dont acides gras saturés"
+                                                data-en="of which saturates">davon gesättigte Fettsäuren</td>
+                                            <td>9,5 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="Kohlenhydrate" data-fr="Glucides" data-en="Carbohydrates">
+                                                Kohlenhydrate</td>
+                                            <td>12,3 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="davon Zucker" data-fr="dont sucres" data-en="of which sugars">
+                                                davon Zucker</td>
+                                            <td>10,2 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="Eiweiß" data-fr="Protéines" data-en="Protein">Eiweiß</td>
+                                            <td>5,6 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="Salz" data-fr="Sel" data-en="Salt">Salz</td>
+                                            <td>15,2 g</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- Allergens -->
+                            <div class="product-info-item">
+                                <button class="product-info-header" aria-expanded="false">
+                                    <span data-de="Allergene" data-fr="Allergènes" data-en="Allergens">Allergene</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="product-info-content" data-de="Kann Spuren von Sellerie enthalten"
+                                    data-fr="Peut contenir des traces de céleri" data-en="May contain traces of celery">
+                                    Kann Spuren von Sellerie enthalten
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-bottom-wrapper">
+                            <div class="product-meta">
+                                <span class="price">€ 7,50</span>
+                                <span class="weight">200 g Glas</span>
+                            </div>
+                            <a href="https://wa.me/4915511404383?text=Ich%20interessiere%20mich%20für%20MIFI"
+                                target="_blank" class="btn-whatsapp-outline">
+                                <img src="assets/whatsapp-color-svgrepo-com.svg" alt="WhatsApp">
+                                <span data-de="Produkt anfragen" data-fr="Commander" data-en="Inquire">Produkt
+                                    anfragen</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MANDARA -->
+                <div class="product-card reveal-on-scroll delay-1">
+                    <div class="product-img-box">
+                        <img src="assets/mandara_real.jpg" alt="MANDARA Gewürzmischung">
+                    </div>
+                    <div class="product-details">
+                        <h4 data-de="MANDARA" data-fr="MANDARA" data-en="MANDARA">MANDARA</h4>
+                        <p class="product-sub" data-de="Unsere hausgemachte Kräutermischung"
+                            data-fr="Notre mélange d'herbes maison" data-en="Our homemade herb blend">Unsere
+                            hausgemachte Kräutermischung</p>
+                        <p class="product-desc"
+                            data-de="MANDARA vereint ausgewählte Kräuter und Gewürze aus Kamerun – harmonisch abgestimmt für eine warme, tief aromatische Küche."
+                            data-fr="MANDARA réunit des herbes et épices sélectionnées du Cameroun – harmonieusement équilibrées pour une cuisine chaleureuse et profondément aromatique."
+                            data-en="MANDARA combines selected herbs and spices from Cameroon – harmoniously balanced for warm, deeply aromatic cuisine.">
+                            MANDARA vereint ausgewählte Kräuter und Gewürze aus Kamerun – harmonisch abgestimmt für eine
+                            warme, tief aromatische Küche.
+                        </p>
+                        <ul class="quality-list">
+                            <li data-de="Keine künstlichen Zusatzstoffe" data-fr="Sans additifs artificiels"
+                                data-en="No artificial additives">Keine künstlichen Zusatzstoffe</li>
+                            <li data-de="Keine Geschmacksverstärker" data-fr="Sans exhausteurs de goût"
+                                data-en="No flavor enhancers">Keine Geschmacksverstärker</li>
+                            <li data-de="Keine künstlichen Aromen" data-fr="Sans arômes artificiels"
+                                data-en="No artificial flavors">Keine künstlichen Aromen</li>
+                        </ul>
+
+                        <!-- Info Accordion MANDARA -->
+                        <div class="product-info-accordion">
+                            <!-- Ingredients -->
+                            <div class="product-info-item">
+                                <button class="product-info-header" aria-expanded="false">
+                                    <span data-de="Zutaten" data-fr="Ingrédients" data-en="Ingredients">Zutaten</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="product-info-content"
+                                    data-de="Lauch, Knoblauch, Djancent, Sellerie, Petersilie, Meersalz, Wilder Muskat, Kurkuma, Wasser"
+                                    data-fr="Poireau, ail, Djansang, céleri, persil, sel marin, muscade sauvage, curcuma, eau"
+                                    data-en="Leek, garlic, Djansang, celery, parsley, sea salt, wild nutmeg, turmeric, water">
+                                    Lauch, Knoblauch, Djancent, Sellerie, Petersilie, Meersalz, Wilder Muskat, Kurkuma,
+                                    Wasser
+                                </div>
+                            </div>
+                            <!-- Nutrition -->
+                            <div class="product-info-item">
+                                <button class="product-info-header" aria-expanded="false">
+                                    <span data-de="Nährwerte" data-fr="Valeurs nutritionnelles"
+                                        data-en="Nutrition">Nährwerte</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="product-info-content">
+                                    <span class="nutrition-note" data-de="Durchschnittlich pro 100 g"
+                                        data-fr="Moyenne pour 100 g" data-en="Average per 100 g">Durchschnittlich pro
+                                        100 g</span>
+                                    <table class="nutrition-table">
+                                        <tr>
+                                            <td data-de="Energie" data-fr="Énergie" data-en="Energy">Energie</td>
+                                            <td>527 kJ / 126 kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="Fett" data-fr="Matières grasses" data-en="Fat">Fett</td>
+                                            <td>5,2 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="davon gesättigte Fettsäuren" data-fr="dont acides gras saturés"
+                                                data-en="of which saturates">davon gesättigte Fettsäuren</td>
+                                            <td>0,7 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="Kohlenhydrate" data-fr="Glucides" data-en="Carbohydrates">
+                                                Kohlenhydrate</td>
+                                            <td>16,1 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="davon Zucker" data-fr="dont sucres" data-en="of which sugars">
+                                                davon Zucker</td>
+                                            <td>3,9 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="Eiweiß" data-fr="Protéines" data-en="Protein">Eiweiß</td>
+                                            <td>0 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-de="Salz" data-fr="Sel" data-en="Salt">Salz</td>
+                                            <td>11,0 g</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- Allergens -->
+                            <div class="product-info-item">
+                                <button class="product-info-header" aria-expanded="false">
+                                    <span data-de="Allergene" data-fr="Allergènes" data-en="Allergens">Allergene</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="product-info-content" data-de="Sellerie" data-fr="Céleri" data-en="Celery">
+                                    Sellerie
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-bottom-wrapper">
+                            <div class="product-meta">
+                                <span class="price">€ 7,50</span>
+                                <span class="weight">200 g Glas</span>
+                            </div>
+                            <a href="https://wa.me/4915511404383?text=Ich%20interessiere%20mich%20für%20MANDARA"
+                                target="_blank" class="btn-whatsapp-outline">
+                                <img src="assets/whatsapp-color-svgrepo-com.svg" alt="WhatsApp">
+                                <span data-de="Produkt anfragen" data-fr="Commander" data-en="Inquire">Produkt
+                                    anfragen</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PENJA PFEFFER -->
+                <div class="product-card reveal-on-scroll delay-2">
+                    <div class="product-img-box">
+                        <img src="assets/penja_real.jpg" alt="Penja Pfeffer">
+                    </div>
+                    <div class="product-details">
+                        <h4 data-de="Schwarzer & Weißer Penja Pfeffer" data-fr="Poivre de Penja Noir & Blanc"
+                            data-en="Black & White Penja Pepper">Schwarzer & Weißer Penja Pfeffer</h4>
+                        <p class="product-sub" data-de="Handverarbeiteter Spitzenpfeffer"
+                            data-fr="Poivre d'exception fait main" data-en="Handcrafted premium pepper">
+                            Handverarbeiteter Spitzenpfeffer</p>
+                        <p class="product-desc"
+                            data-de="Exklusiver Penja Pfeffer aus der vulkanischen Region Kameruns – weltweit geschätzt für seine intensive, komplexe Aromatik."
+                            data-fr="Poivre de Penja exclusif de la région volcanique du Cameroun – apprécié mondialement pour son arôme intense et complexe."
+                            data-en="Exclusive Penja pepper from the volcanic region of Cameroon – valued worldwide for its intense, complex aroma.">
+                            Exklusiver Penja Pfeffer aus der vulkanischen Region Kameruns – weltweit geschätzt für seine
+                            intensive, komplexe Aromatik.
+                        </p>
+                        <ul class="quality-list">
+                            <li data-de="Herkunftgeschützt" data-fr="Protégé par l'origine" data-en="Protected origin">
+                                Herkunftgeschützt</li>
+                            <li data-de="Handverarbeitet" data-fr="Fait main" data-en="Handcrafted">Handverarbeitet</li>
+                            <li data-de="Anbau auf mineralreichem Vulkanboden" data-fr="Culture sur sol volcanique"
+                                data-en="Grown on mineral-rich volcanic soil">Anbau auf mineralreichem Vulkanboden</li>
+                        </ul>
+
+                        <!-- Info Accordion PENJA -->
+                        <div class="product-info-accordion">
+                            <!-- Details -->
+                            <div class="product-info-item">
+                                <button class="product-info-header" aria-expanded="false">
+                                    <span data-de="Zutaten" data-fr="Ingrédients" data-en="Ingredients">Zutaten</span>
+                                    <span class="toggle-icon">▼</span>
+                                </button>
+                                <div class="product-info-content"
+                                    data-de="100% Penja Pfeffer (Piper nigrum). Ohne künstliche Zusätze."
+                                    data-fr="100% Poivre de Penja (Piper nigrum). Sans additifs."
+                                    data-en="100% Penja Pepper (Piper nigrum). No artificial additives.">
+                                    100% Penja Pfeffer (Piper nigrum). Ohne künstliche Zusätze.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-bottom-wrapper">
+                            <div class="product-meta">
+                                <span class="price">€ 7,50</span>
+                                <span class="weight">50 g Glas</span>
+                            </div>
+                            <a href="https://wa.me/4915511404383?text=Ich%20interessiere%20mich%20für%20Penja%20Pfeffer"
+                                target="_blank" class="btn-whatsapp-outline">
+                                <img src="assets/whatsapp-color-svgrepo-com.svg" alt="WhatsApp">
+                                <span data-de="Produkt anfragen" data-fr="Commander" data-en="Inquire">Produkt
+                                    anfragen</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header center reveal-on-scroll">
+                <h2 data-de="Kontakt" data-fr="Contact" data-en="Contact">Kontakt</h2>
+                <h3 class="accent-text" data-de="Bereits Appetit bekommen?" data-fr="Déjà en appétit ?"
+                    data-en="Already hungry?">Bereits Appetit bekommen?</h3>
+                <p data-de="Schreiben Sie uns – wir melden uns persönlich bei Ihnen."
+                    data-fr="Écrivez-nous – nous vous répondrons personnellement."
+                    data-en="Write to us – we will get back to you personally.">
+                    Schreiben Sie uns – wir melden uns persönlich bei Ihnen.
+                </p>
+            </div>
+
+            <!-- Frame Wrapper -->
+            <div class="contact-frame reveal-on-scroll delay-1">
+                <div class="grid-2 gap-large align-start text-left">
+
+                    <!-- Contact Info & Map -->
+                    <div class="contact-info">
+                        <div class="map-wrapper">
+                            <!-- Google Maps Embed -->
+                            <!-- Google Maps Embed -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.98461838417!2d8.696907376009833!3d48.858503700699224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b59ae6062c4b8a5%3A0x72dddcb0a08725de!2sOtiaa%20-%20Kamerunische%20Spezialit%C3%A4ten%20%26%20Feinkost!5e0!3m2!1sen!2sde!4v1768737937102!5m2!1sen!2sde"
+                                width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <p class="map-caption">OTIAA – Kamerunisches Catering & Feinkost</p>
+                        </div>
+
+                        <div class="contact-text mt-small">
+                            <!-- Address -->
+                            <div class="contact-row">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                                <div>
+                                    <p style="margin:0;">Uhlandstraße 37</p>
+                                    <p style="margin:0;">75181 Pforzheim</p>
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp -->
+                            <div class="contact-row">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.585 1.961.936 3.297.936h.001c3.181 0 5.768-2.586 5.768-5.766 0-3.18-2.587-5.767-5.768-5.767zm6.591 1.637c.712.981 1.127 2.148 1.127 3.421 0 3.21-2.611 5.821-5.821 5.821-1.272 0-2.439-.415-3.419-1.126l-3.322.868.887-3.239c-.711-.98-1.127-2.147-1.127-3.419 0-3.21 2.611-5.822 5.821-5.822s5.821 2.611 5.821 5.821zm-13.623 3.42c0 4.291 3.492 7.783 7.783 7.783 1.571 0 3.033-.466 4.254-1.265l4.981 1.304-1.332-4.856c.799-1.221 1.265-2.683 1.265-4.254 0-4.291-3.491-7.782-7.782-7.782-4.292 0-7.783 3.491-7.783 7.782zm14.832 9.768l-1.956-7.147c.504-1.096.791-2.316.791-3.601 0-4.809-3.914-8.723-8.723-8.723s-8.723 3.914-8.723 8.723c0 4.808 3.914 8.722 8.723 8.722 1.285 0 2.505-.287 3.601-.791l7.147 1.956c.456.125.86.014 1.14-.138.279-.152.518-.466.518-.946v-.002z" />
+                                </svg>
+                                <div>
+                                    <a href="https://wa.me/4915511404383" class="text-link" target="_blank">+49 (0) 155
+                                        1140 4383</a>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="contact-row">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                                <div>
+                                    <a href="mailto:kontakt@otiaa.de" class="text-link">kontakt@otiaa.de</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" action="https://formspree.io/f/mlggwajp" method="POST">
+                            <div class="form-group">
+                                <label for="name" data-de="Name" data-fr="Nom" data-en="Name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-de="E-Mail" data-fr="E-Mail" data-en="Email">E-Mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-de="Nachricht" data-fr="Message"
+                                    data-en="Message">Nachricht</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group checkbox-group"
+                                style="display: flex; align-items: start; gap: 10px;">
+                                <input type="checkbox" id="privacy" name="privacy" required
+                                    style="width: auto; margin-top: 5px;">
+                                <label for="privacy" style="font-weight: 400; font-size: 0.85rem;"
+                                    data-de="Ich stimme den Datenschutzerklärungen zu"
+                                    data-fr="J'accepte la politique de confidentialité"
+                                    data-en="I agree to the privacy policy">Ich stimme den Datenschutzerklärungen
+                                    zu</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width" data-de="Absenden"
+                                data-fr="Envoyer" data-en="Send">Absenden</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="center mt-large reveal-on-scroll">
+                    <a href="faq.html" class="handwritten-font"
+                        style="font-size: 1.3rem; border-bottom: 2px solid var(--c-highlight); padding-bottom: 5px; display: inline-block;"
+                        data-de="Lassen Sie mich Ihre restlichen Fragen beantworten"
+                        data-fr="Laissez-moi répondre à vos questions restantes"
+                        data-en="Let me answer your remaining questions">
+                        Lassen Sie mich Ihre restlichen Fragen beantworten
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content-grid">
+
+                <!-- Center Left: Info -->
+                <div class="footer-col-left">
+                    <div class="footer-info">
+                        <h4 data-de="ÜBER OTIAA" data-fr="À PROPOS D'OTIAA" data-en="ABOUT OTIAA">ÜBER OTIAA</h4>
+                        <p data-de="Authentische kamerunische Küche und handgemachte Feinkost für Ihre besonderen Momente."
+                            data-fr="Cuisine camerounaise authentique et épicerie fine artisanale pour vos moments privilégiés."
+                            data-en="Authentic Cameroonian cuisine and handmade delicatessen for your special moments.">
+                            Authentische kamerunische Küche und handgemachte Feinkost für Ihre besonderen Momente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Center Center: Payment -->
+                <div class="footer-col-center">
+                    <h4 data-de="WIR AKZEPTIEREN" data-fr="NOUS ACCEPTONS" data-en="WE ACCEPT">WIR
+                        AKZEPTIEREN</h4>
+                    <div class="payment-icons">
+                        <img src="assets/giro-pay-svgrepo-com.svg" alt="Giropay" class="payment-img-new">
+                        <img src="assets/visa-3-svgrepo-com.svg" alt="Visa" class="payment-img-new">
+                        <img src="assets/mastercard-4-logo-svgrepo-com.svg" alt="Mastercard" class="payment-img-new">
+                        <img src="assets/paypal-svgrepo-com.svg" alt="PayPal" class="payment-img-new">
+                    </div>
+                </div>
+
+                <!-- Center Right: Follow Us -->
+                <div class="footer-col-right">
+                    <h4 data-de="FOLGEN SIE UNS" data-fr="SUIVEZ-NOUS" data-en="FOLLOW US">FOLGEN SIE
+                        UNS</h4>
+                    <div class="footer-socials" style="display: flex; gap: 1rem;">
+                        <a href="https://instagram.com/otiaa_food" target="_blank" class="nav-social" style="color: white;"
+                            aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@otiaa4" target="_blank" class="nav-social" style="color: white;"
+                            aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.62-1.1-.28-.24-.59-.52-.81-.88v13.3c0 1.64-1.33 2.97-2.97 2.97-1.64 0-2.97-1.33-2.97-2.97 0-1.64 1.33-2.97 2.97-2.97.17 0 .35.02.52.05v-4.22c-2.49.2-4.5 2.28-4.5 4.83 0 2.66 2.17 4.83 4.83 4.83 2.66 0 4.83-2.17 4.83-4.83V4.2c1.94 1.45 4.19 1.69 6.27.06-.05-1.41-.02-2.83-.02-4.24z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-links center mt-large"
+                style="justify-content: center; display: flex; gap: 2rem; flex-wrap: wrap;">
+                <a href="faq.html" data-de="FAQ" data-fr="FAQ" data-en="FAQ">FAQ</a>
+                <a href="impressum.html" data-de="Impressum" data-fr="Mentions légales"
+                    data-en="Legal Notice">Impressum</a>
+                <a href="datenschutz.html" data-de="Datenschutz" data-fr="Confidentialité"
+                    data-en="Privacy Policy">Datenschutz</a>
+                <a href="agb.html" data-de="AGB" data-fr="CGV" data-en="T&C">AGB</a>
+                <a href="widerruf.html" data-de="Widerruf" data-fr="Rétractation" data-en="Cancellation">Widerruf</a>
+            </div>
+
+            <div class="copyright center small-text mt-small">
+                &copy; 2026 OTIAA. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/4915511404383" class="whatsapp-float" target="_blank" aria-label="WhatsApp Business">
+        <img src="assets/whatsapp-color-svgrepo-com.svg" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
+
 
