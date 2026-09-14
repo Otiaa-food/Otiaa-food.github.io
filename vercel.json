@@ -10,5 +10,9 @@
       "destination": "/",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    { "source": "/vorbestellen", "destination": "https://team.otiaa.de/vorbestellen" },
+    { "source": "/vorbestellen/:path*", "destination": "https://team.otiaa.de/vorbestellen/:path*" }
   ]
 }
