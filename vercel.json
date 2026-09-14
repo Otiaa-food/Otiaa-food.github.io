@@ -13,6 +13,7 @@
   ],
   "rewrites": [
     { "source": "/vorbestellen", "destination": "https://team.otiaa.de/vorbestellen" },
-    { "source": "/vorbestellen/:path*", "destination": "https://team.otiaa.de/vorbestellen/:path*" }
+    { "source": "/vorbestellen/:path*", "destination": "https://team.otiaa.de/vorbestellen/:path*" },
+    { "source": "/_next/:path*", "destination": "https://team.otiaa.de/_next/:path*" }
   ]
 }
