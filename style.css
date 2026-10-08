@@ -1156,7 +1156,8 @@ ul {
     .hero {
         height: auto;
         min-height: 60vh;
-        padding: 120px 0 60px;
+        /* Navbar ist fixed (~170px hoch inkl. Logo) – Text muss darunter beginnen */
+        padding: 220px 0 60px;
     }
 
     .section {
